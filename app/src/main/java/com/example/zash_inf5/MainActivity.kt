@@ -1,0 +1,24 @@
+package com.example.zash_inf5
+
+import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_main.*
+
+class MainActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        reg.setOnClickListener {
+            val intent = Intent(this, regis::class.java)
+            startActivity(intent)
+        }
+
+        login.setOnClickListener {
+            val intent = Intent(this, log::class.java)
+            startActivity(intent)
+        }
+    }
+}
