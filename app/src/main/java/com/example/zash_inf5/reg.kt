@@ -7,7 +7,7 @@ import kotlinx.android.synthetic.main.activity_reg.*
 
 class regis : AppCompatActivity() {
     //some comment
-    var count = 9
+    var count = 8
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
